@@ -6,3 +6,31 @@
 #
 # Pods/
 
+MySoccerChamp.xcworkspace/xcuserdata*
+XcodeCoverage/env.sh# Xcode
+.DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*/XcodeCoverage/env.sh
+*.xccheckout
+*.xcarchive
+releases
+
+#CocoaPods
+Pods
+**/test-reports/
+**/coverage.xml
+
