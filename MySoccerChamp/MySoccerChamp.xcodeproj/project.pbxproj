@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FD10F7119868CC0001B61D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7019868CC0001B61D9 /* Foundation.framework */; };
+		3FD10F7319868CC0001B61D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7219868CC0001B61D9 /* CoreGraphics.framework */; };
+		3FD10F7519868CC0001B61D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7419868CC0001B61D9 /* UIKit.framework */; };
+		3FD10F7B19868CC0001B61D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FD10F7919868CC0001B61D9 /* InfoPlist.strings */; };
+		3FD10F7D19868CC0001B61D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD10F7C19868CC0001B61D9 /* main.m */; };
+		3FD10F8119868CC0001B61D9 /* JTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD10F8019868CC0001B61D9 /* JTAppDelegate.m */; };
+		3FD10F8419868CC0001B61D9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD10F8219868CC0001B61D9 /* Main_iPhone.storyboard */; };
+		3FD10F8719868CC0001B61D9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD10F8519868CC0001B61D9 /* Main_iPad.storyboard */; };
+		3FD10F8A19868CC0001B61D9 /* JTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD10F8919868CC0001B61D9 /* JTFirstViewController.m */; };
+		3FD10F8D19868CC0001B61D9 /* JTSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD10F8C19868CC0001B61D9 /* JTSecondViewController.m */; };
+		3FD10F8F19868CC0001B61D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD10F8E19868CC0001B61D9 /* Images.xcassets */; };
+		3FD10F9619868CC0001B61D9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F9519868CC0001B61D9 /* XCTest.framework */; };
+		3FD10F9719868CC0001B61D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7019868CC0001B61D9 /* Foundation.framework */; };
+		3FD10F9819868CC0001B61D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7419868CC0001B61D9 /* UIKit.framework */; };
+		3FD10FA019868CC0001B61D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FD10F9E19868CC0001B61D9 /* InfoPlist.strings */; };
+		3FD10FA219868CC0001B61D9 /* MySoccerChampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD10FA119868CC0001B61D9 /* MySoccerChampTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FD10F9919868CC0001B61D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD10F6519868CC0001B61D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FD10F6C19868CC0001B61D9;
+			remoteInfo = MySoccerChamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FD10F6D19868CC0001B61D9 /* MySoccerChamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySoccerChamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD10F7019868CC0001B61D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FD10F7219868CC0001B61D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FD10F7419868CC0001B61D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FD10F7819868CC0001B61D9 /* MySoccerChamp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MySoccerChamp-Info.plist"; sourceTree = "<group>"; };
+		3FD10F7A19868CC0001B61D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FD10F7C19868CC0001B61D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FD10F7E19868CC0001B61D9 /* MySoccerChamp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySoccerChamp-Prefix.pch"; sourceTree = "<group>"; };
+		3FD10F7F19868CC0001B61D9 /* JTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTAppDelegate.h; sourceTree = "<group>"; };
+		3FD10F8019868CC0001B61D9 /* JTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTAppDelegate.m; sourceTree = "<group>"; };
+		3FD10F8319868CC0001B61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3FD10F8619868CC0001B61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3FD10F8819868CC0001B61D9 /* JTFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTFirstViewController.h; sourceTree = "<group>"; };
+		3FD10F8919868CC0001B61D9 /* JTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTFirstViewController.m; sourceTree = "<group>"; };
+		3FD10F8B19868CC0001B61D9 /* JTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSecondViewController.h; sourceTree = "<group>"; };
+		3FD10F8C19868CC0001B61D9 /* JTSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSecondViewController.m; sourceTree = "<group>"; };
+		3FD10F8E19868CC0001B61D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3FD10F9419868CC0001B61D9 /* MySoccerChampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySoccerChampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD10F9519868CC0001B61D9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3FD10F9D19868CC0001B61D9 /* MySoccerChampTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MySoccerChampTests-Info.plist"; sourceTree = "<group>"; };
+		3FD10F9F19868CC0001B61D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FD10FA119868CC0001B61D9 /* MySoccerChampTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySoccerChampTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FD10F6A19868CC0001B61D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD10F7319868CC0001B61D9 /* CoreGraphics.framework in Frameworks */,
+				3FD10F7519868CC0001B61D9 /* UIKit.framework in Frameworks */,
+				3FD10F7119868CC0001B61D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD10F9119868CC0001B61D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD10F9619868CC0001B61D9 /* XCTest.framework in Frameworks */,
+				3FD10F9819868CC0001B61D9 /* UIKit.framework in Frameworks */,
+				3FD10F9719868CC0001B61D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FD10F6419868CC0001B61D9 = {
+			isa = PBXGroup;
+			children = (
+				3FD10F7619868CC0001B61D9 /* MySoccerChamp */,
+				3FD10F9B19868CC0001B61D9 /* MySoccerChampTests */,
+				3FD10F6F19868CC0001B61D9 /* Frameworks */,
+				3FD10F6E19868CC0001B61D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FD10F6E19868CC0001B61D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FD10F6D19868CC0001B61D9 /* MySoccerChamp.app */,
+				3FD10F9419868CC0001B61D9 /* MySoccerChampTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FD10F6F19868CC0001B61D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FD10F7019868CC0001B61D9 /* Foundation.framework */,
+				3FD10F7219868CC0001B61D9 /* CoreGraphics.framework */,
+				3FD10F7419868CC0001B61D9 /* UIKit.framework */,
+				3FD10F9519868CC0001B61D9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FD10F7619868CC0001B61D9 /* MySoccerChamp */ = {
+			isa = PBXGroup;
+			children = (
+				3FD10F7F19868CC0001B61D9 /* JTAppDelegate.h */,
+				3FD10F8019868CC0001B61D9 /* JTAppDelegate.m */,
+				3FD10F8219868CC0001B61D9 /* Main_iPhone.storyboard */,
+				3FD10F8519868CC0001B61D9 /* Main_iPad.storyboard */,
+				3FD10F8819868CC0001B61D9 /* JTFirstViewController.h */,
+				3FD10F8919868CC0001B61D9 /* JTFirstViewController.m */,
+				3FD10F8B19868CC0001B61D9 /* JTSecondViewController.h */,
+				3FD10F8C19868CC0001B61D9 /* JTSecondViewController.m */,
+				3FD10F8E19868CC0001B61D9 /* Images.xcassets */,
+				3FD10F7719868CC0001B61D9 /* Supporting Files */,
+			);
+			path = MySoccerChamp;
+			sourceTree = "<group>";
+		};
+		3FD10F7719868CC0001B61D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FD10F7819868CC0001B61D9 /* MySoccerChamp-Info.plist */,
+				3FD10F7919868CC0001B61D9 /* InfoPlist.strings */,
+				3FD10F7C19868CC0001B61D9 /* main.m */,
+				3FD10F7E19868CC0001B61D9 /* MySoccerChamp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FD10F9B19868CC0001B61D9 /* MySoccerChampTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FD10FA119868CC0001B61D9 /* MySoccerChampTests.m */,
+				3FD10F9C19868CC0001B61D9 /* Supporting Files */,
+			);
+			path = MySoccerChampTests;
+			sourceTree = "<group>";
+		};
+		3FD10F9C19868CC0001B61D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FD10F9D19868CC0001B61D9 /* MySoccerChampTests-Info.plist */,
+				3FD10F9E19868CC0001B61D9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FD10F6C19868CC0001B61D9 /* MySoccerChamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD10FA519868CC0001B61D9 /* Build configuration list for PBXNativeTarget "MySoccerChamp" */;
+			buildPhases = (
+				3FD10F6919868CC0001B61D9 /* Sources */,
+				3FD10F6A19868CC0001B61D9 /* Frameworks */,
+				3FD10F6B19868CC0001B61D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySoccerChamp;
+			productName = MySoccerChamp;
+			productReference = 3FD10F6D19868CC0001B61D9 /* MySoccerChamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FD10F9319868CC0001B61D9 /* MySoccerChampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD10FA819868CC0001B61D9 /* Build configuration list for PBXNativeTarget "MySoccerChampTests" */;
+			buildPhases = (
+				3FD10F9019868CC0001B61D9 /* Sources */,
+				3FD10F9119868CC0001B61D9 /* Frameworks */,
+				3FD10F9219868CC0001B61D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FD10F9A19868CC0001B61D9 /* PBXTargetDependency */,
+			);
+			name = MySoccerChampTests;
+			productName = MySoccerChampTests;
+			productReference = 3FD10F9419868CC0001B61D9 /* MySoccerChampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FD10F6519868CC0001B61D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jonas Tomaz";
+				TargetAttributes = {
+					3FD10F9319868CC0001B61D9 = {
+						TestTargetID = 3FD10F6C19868CC0001B61D9;
+					};
+				};
+			};
+			buildConfigurationList = 3FD10F6819868CC0001B61D9 /* Build configuration list for PBXProject "MySoccerChamp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FD10F6419868CC0001B61D9;
+			productRefGroup = 3FD10F6E19868CC0001B61D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FD10F6C19868CC0001B61D9 /* MySoccerChamp */,
+				3FD10F9319868CC0001B61D9 /* MySoccerChampTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FD10F6B19868CC0001B61D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD10F8719868CC0001B61D9 /* Main_iPad.storyboard in Resources */,
+				3FD10F8F19868CC0001B61D9 /* Images.xcassets in Resources */,
+				3FD10F8419868CC0001B61D9 /* Main_iPhone.storyboard in Resources */,
+				3FD10F7B19868CC0001B61D9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD10F9219868CC0001B61D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD10FA019868CC0001B61D9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FD10F6919868CC0001B61D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD10F8D19868CC0001B61D9 /* JTSecondViewController.m in Sources */,
+				3FD10F8A19868CC0001B61D9 /* JTFirstViewController.m in Sources */,
+				3FD10F8119868CC0001B61D9 /* JTAppDelegate.m in Sources */,
+				3FD10F7D19868CC0001B61D9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD10F9019868CC0001B61D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD10FA219868CC0001B61D9 /* MySoccerChampTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FD10F9A19868CC0001B61D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FD10F6C19868CC0001B61D9 /* MySoccerChamp */;
+			targetProxy = 3FD10F9919868CC0001B61D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FD10F7919868CC0001B61D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FD10F7A19868CC0001B61D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FD10F8219868CC0001B61D9 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FD10F8319868CC0001B61D9 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3FD10F8519868CC0001B61D9 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FD10F8619868CC0001B61D9 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3FD10F9E19868CC0001B61D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FD10F9F19868CC0001B61D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FD10FA319868CC0001B61D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FD10FA419868CC0001B61D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FD10FA619868CC0001B61D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MySoccerChamp/MySoccerChamp-Prefix.pch";
+				INFOPLIST_FILE = "MySoccerChamp/MySoccerChamp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FD10FA719868CC0001B61D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MySoccerChamp/MySoccerChamp-Prefix.pch";
+				INFOPLIST_FILE = "MySoccerChamp/MySoccerChamp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3FD10FA919868CC0001B61D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MySoccerChamp.app/MySoccerChamp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MySoccerChamp/MySoccerChamp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MySoccerChampTests/MySoccerChampTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3FD10FAA19868CC0001B61D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MySoccerChamp.app/MySoccerChamp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MySoccerChamp/MySoccerChamp-Prefix.pch";
+				INFOPLIST_FILE = "MySoccerChampTests/MySoccerChampTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FD10F6819868CC0001B61D9 /* Build configuration list for PBXProject "MySoccerChamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD10FA319868CC0001B61D9 /* Debug */,
+				3FD10FA419868CC0001B61D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD10FA519868CC0001B61D9 /* Build configuration list for PBXNativeTarget "MySoccerChamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD10FA619868CC0001B61D9 /* Debug */,
+				3FD10FA719868CC0001B61D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FD10FA819868CC0001B61D9 /* Build configuration list for PBXNativeTarget "MySoccerChampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD10FA919868CC0001B61D9 /* Debug */,
+				3FD10FAA19868CC0001B61D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FD10F6519868CC0001B61D9 /* Project object */;
+}
