@@ -9,3 +9,6 @@
 //Parse
 extern NSString * const kParseApplicationId;
 extern NSString * const kParseClientKey;
+
+//Notifications
+extern NSString * const kSwapFromLoginToHomeNotification;

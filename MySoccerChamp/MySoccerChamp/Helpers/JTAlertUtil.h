@@ -10,4 +10,8 @@
 
 @interface JTAlertUtil : NSObject
 
++(void) showAlertWithMessage:(NSString*)message;
++(void)showAlertWithTitle:(NSString *)title andMessage:(NSString*) message andCancelButtonTitle:(NSString*) cancelButtonTitle andOtherButtonTitles:(NSString*)otherButtonTitle andDelegate:(id<UIAlertViewDelegate>)delegate;
++(void)showAlertWithTitle:(NSString *)title andMessage:(NSString*) message andCancelButtonTitle:(NSString*) cancelButtonTitle;
+
 @end

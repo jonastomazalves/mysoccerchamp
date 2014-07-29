@@ -25,6 +25,7 @@
 		3F4C1FDA19881A0F00B4F994 /* JTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C1FD919881A0F00B4F994 /* JTHomeViewController.m */; };
 		3F4C1FDE19881B0A00B4F994 /* StoryboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C1FDD19881B0A00B4F994 /* StoryboardUtil.m */; };
 		3F4C1FE0198846BA00B4F994 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4C1FDF198846BA00B4F994 /* FacebookSDK.framework */; };
+		3F4C1FE319884AAF00B4F994 /* JTAlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C1FE219884AAF00B4F994 /* JTAlertUtil.m */; };
 		3FD10F7119868CC0001B61D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7019868CC0001B61D9 /* Foundation.framework */; };
 		3FD10F7319868CC0001B61D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7219868CC0001B61D9 /* CoreGraphics.framework */; };
 		3FD10F7519868CC0001B61D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7419868CC0001B61D9 /* UIKit.framework */; };
@@ -77,6 +78,8 @@
 		3F4C1FDC19881B0A00B4F994 /* StoryboardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardUtil.h; sourceTree = "<group>"; };
 		3F4C1FDD19881B0A00B4F994 /* StoryboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardUtil.m; sourceTree = "<group>"; };
 		3F4C1FDF198846BA00B4F994 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		3F4C1FE119884AAF00B4F994 /* JTAlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTAlertUtil.h; sourceTree = "<group>"; };
+		3F4C1FE219884AAF00B4F994 /* JTAlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTAlertUtil.m; sourceTree = "<group>"; };
 		3FD10F6D19868CC0001B61D9 /* MySoccerChamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySoccerChamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD10F7019868CC0001B61D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FD10F7219868CC0001B61D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,6 +165,8 @@
 			children = (
 				3F4C1FDC19881B0A00B4F994 /* StoryboardUtil.h */,
 				3F4C1FDD19881B0A00B4F994 /* StoryboardUtil.m */,
+				3F4C1FE119884AAF00B4F994 /* JTAlertUtil.h */,
+				3F4C1FE219884AAF00B4F994 /* JTAlertUtil.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				3F4C1FD01988137900B4F994 /* JTConstants.m in Sources */,
 				3FD10F8119868CC0001B61D9 /* JTAppDelegate.m in Sources */,
 				3FD10F7D19868CC0001B61D9 /* main.m in Sources */,
+				3F4C1FE319884AAF00B4F994 /* JTAlertUtil.m in Sources */,
 				3F4C1FDE19881B0A00B4F994 /* StoryboardUtil.m in Sources */,
 				3F4C1FD41988168500B4F994 /* JTInitialContainerViewController.m in Sources */,
 				3F4C1FDA19881A0F00B4F994 /* JTHomeViewController.m in Sources */,

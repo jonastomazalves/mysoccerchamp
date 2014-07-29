@@ -30,11 +30,14 @@
     } else {
         [self displayContentController:self.homeVC];
     }
+    
+    [self addObservers];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    [self removeObservers];
     // Dispose of any resources that can be recreated.
 }
 
@@ -61,9 +64,40 @@
     [content didMoveToParentViewController:self];
 }
 
--(CGRect) frameForContentController {
-    return CGRectZero;
+-(void)swapFromLoginToHome {
+    
+    [self.loginVC willMoveToParentViewController:nil];
+    [self addChildViewController:self.homeVC];
+    
+    CGRect endFrame = [self oldViewEndFrame];
+    
+    [self transitionFromViewController: self.homeVC toViewController: self.homeVC
+                              duration: 0.25 options:0
+                            animations:^{
+                                self.homeVC.view.frame = self.containerView.frame;
+                                self.loginVC.view.frame = endFrame;
+                            }
+                            completion:^(BOOL finished) {
+                                [self.loginVC removeFromParentViewController];
+                                [self.containerView addSubview:self.homeVC.view];
+                                [self.homeVC didMoveToParentViewController:self];
+                            }];
 }
 
+-(CGRect)oldViewEndFrame {
+    return CGRectMake(-320, 0, self.loginVC.view.frame.size.width, self.loginVC.view.frame.size.height);
+}
+
+#pragma mark - Notifications
+
+-(void)addObservers{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(swapFromLoginToHome)
+                                                 name:kSwapFromLoginToHomeNotification object:nil];
+}
+
+-(void)removeObservers{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kSwapFromLoginToHomeNotification object:nil];
+}
 
 @end

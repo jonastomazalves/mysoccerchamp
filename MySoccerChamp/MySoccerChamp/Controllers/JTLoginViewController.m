@@ -7,6 +7,7 @@
 //
 
 #import "JTLoginViewController.h"
+#import "JTAlertUtil.h"
 #import <Parse/Parse.h>
 
 @interface JTLoginViewController ()
@@ -39,6 +40,8 @@
 }
 */
 
+#pragma marck - Facebook Login
+
 - (IBAction)facebookLogin:(id)sender {
     
     // Login PFUser using Facebook
@@ -46,13 +49,15 @@
     [PFFacebookUtils logInWithPermissions:nil block:^(PFUser *user, NSError *error) {
         if (!user) {
             if (!error) {
-                NSLog(@"Uh oh. The user cancelled the Facebook login.");
+                [JTAlertUtil showAlertWithTitle:@"Ooops!" andMessage:@"Facebook login is realy necesary!" andCancelButtonTitle:@"Ok"];
             } else {
-                NSLog(@"Uh oh. An error occurred: %@", error);
+                [JTAlertUtil showAlertWithTitle:@"Ooops!" andMessage:error.description andCancelButtonTitle:@"Ok"];
             }
         } else if (user.isNew) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:kSwapFromLoginToHomeNotification object:nil];
             NSLog(@"User with facebook signed up and logged in!");
         } else {
+            [[NSNotificationCenter defaultCenter] postNotificationName:kSwapFromLoginToHomeNotification object:nil];
             NSLog(@"User with facebook logged in!");
         }
     }];

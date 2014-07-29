@@ -12,3 +12,6 @@
 NSString * const kParseApplicationId = @"lavuIVGTWmzWQpKsSBRMAvukJvWSOaG34dUtoppe";
 NSString * const kParseClientKey = @"00s0mCHMuwtnGTIQpREuiPvlFE6toSUX1zd560AM";
 
+//Notifications
+NSString * const kSwapFromLoginToHomeNotification = @"SwapFromLoginToHomeNotification";
+
