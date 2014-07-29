@@ -1,66 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="pVU-yh-cAb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Z02-zY-vaF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
-        <scene sceneID="pac-H3-XcE">
+        <scene sceneID="g7A-Hu-aVW">
             <objects>
-                <viewController storyboardIdentifier="JTLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wCg-NX-09b" customClass="JTLoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JTLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gtI-Fb-Tet" customClass="JTLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0Gy-xW-bG8"/>
-                        <viewControllerLayoutGuide type="bottom" id="fZl-Lt-ltR"/>
+                        <viewControllerLayoutGuide type="top" id="M2B-qh-K0h"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Nm-tu-3cr"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uOp-NU-Xcj">
+                    <view key="view" contentMode="scaleToFill" id="AZO-li-VVd">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Não LOGADO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPs-Ro-Bm8">
-                                <rect key="frame" x="106" y="273" width="108" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTb-x2-EKm">
+                                <rect key="frame" x="32" y="487" width="256" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" image="btn-fb">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookLogin:" destination="gtI-Fb-Tet" eventType="touchUpInside" id="Xz5-XX-MD4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-ipad" translatesAutoresizingMaskIntoConstraints="NO" id="oSY-Jn-GjQ">
+                                <rect key="frame" x="320" y="57" width="0.0" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.65490196079999996" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="facebookLoginButton" destination="iTb-x2-EKm" id="SXF-86-ROm"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i7m-Km-1SN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nI9-lM-HEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63" y="1698"/>
+            <point key="canvasLocation" x="-157" y="1574"/>
         </scene>
         <!--Initial Container View Controller-->
-        <scene sceneID="VUl-iO-cfi">
+        <scene sceneID="Zd3-ye-Gbm">
             <objects>
-                <viewController storyboardIdentifier="JTInitialContainerViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pVU-yh-cAb" customClass="JTInitialContainerViewController" sceneMemberID="viewController">
-                    <containerView key="view" contentMode="scaleToFill" id="Mdn-B6-4t6">
+                <viewController storyboardIdentifier="JTInitialContainerViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z02-zY-vaF" customClass="JTInitialContainerViewController" sceneMemberID="viewController">
+                    <containerView key="view" contentMode="scaleToFill" id="nFf-kE-ccj">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.50196078430000002" green="0.7725490196" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                     </containerView>
                     <toolbarItems/>
                     <connections>
-                        <outlet property="containerView" destination="Mdn-B6-4t6" id="vY4-2f-lib"/>
+                        <outlet property="containerView" destination="nFf-kE-ccj" id="zye-ZJ-bRL"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NMK-7X-HUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2h-Rl-w1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-906" y="1084"/>
+            <point key="canvasLocation" x="-1026" y="476"/>
         </scene>
         <!--Home View Controller-->
-        <scene sceneID="eej-jr-4Hn">
+        <scene sceneID="lQz-zw-gGC">
             <objects>
-                <viewController storyboardIdentifier="JTHomeViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s4B-HH-ake" customClass="JTHomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JTHomeViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xEm-lZ-kUa" customClass="JTHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VqX-ys-6HR"/>
-                        <viewControllerLayoutGuide type="bottom" id="Btq-zY-RB3"/>
+                        <viewControllerLayoutGuide type="top" id="3Tz-KN-IPN"/>
+                        <viewControllerLayoutGuide type="bottom" id="jhl-MY-c8J"/>
                     </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zq7-ZN-USP">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Q0F-qr-hXb">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGADO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94o-V6-e9r">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGADO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joj-zz-Wqx">
                                 <rect key="frame" x="124" y="273" width="72" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -68,15 +79,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.65490196079999996" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0lb-vO-f32" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jn-Ep-Esk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="83" y="478"/>
+            <point key="canvasLocation" x="-57" y="198"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn-fb" width="211" height="50"/>
+        <image name="logo-ipad" width="225" height="184"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

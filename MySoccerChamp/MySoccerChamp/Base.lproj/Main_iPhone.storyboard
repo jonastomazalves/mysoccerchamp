@@ -16,21 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNS-6w-Mdn">
-                                <rect key="frame" x="141" y="269" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNS-6w-Mdn">
+                                <rect key="frame" x="55" y="259" width="211" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login">
+                                <state key="normal" image="btn-fb">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="facebookLogin:" destination="3Qe-Qf-DYg" eventType="touchUpInside" id="zuZ-iX-GtP"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-kQ-HPN">
+                                <rect key="frame" x="96" y="54" width="128" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ln8-kF-gOa">
+                                <rect key="frame" x="0.0" y="394" width="320" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.65490196078431373" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="UNS-6w-Mdn" secondAttribute="centerY" id="Ugh-Zg-rH2"/>
-                            <constraint firstAttribute="centerX" secondItem="UNS-6w-Mdn" secondAttribute="centerX" id="pnW-xF-esR"/>
+                            <constraint firstAttribute="centerX" secondItem="Ln8-kF-gOa" secondAttribute="centerX" id="94h-Zf-KH8"/>
+                            <constraint firstAttribute="centerX" secondItem="UNS-6w-Mdn" secondAttribute="centerX" id="hNf-jp-0DM"/>
+                            <constraint firstItem="iBm-kQ-HPN" firstAttribute="top" secondItem="M0F-Ls-nbd" secondAttribute="bottom" constant="34" id="kFY-8L-x0b"/>
+                            <constraint firstAttribute="centerX" secondItem="iBm-kQ-HPN" secondAttribute="centerX" id="njR-l5-e5d"/>
+                            <constraint firstItem="2NN-V1-bxr" firstAttribute="top" secondItem="Ln8-kF-gOa" secondAttribute="bottom" id="tkl-Ug-KfO"/>
+                            <constraint firstAttribute="centerY" secondItem="UNS-6w-Mdn" secondAttribute="centerY" id="xSy-bk-KSO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -79,7 +91,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.65490196079999996" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
                 </viewController>
@@ -88,6 +100,11 @@
             <point key="canvasLocation" x="-217" y="-74"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="320" height="174"/>
+        <image name="btn-fb" width="211" height="50"/>
+        <image name="logo" width="128" height="104"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
