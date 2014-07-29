@@ -24,6 +24,7 @@
 		3F4C1FD71988197B00B4F994 /* JTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C1FD61988197B00B4F994 /* JTLoginViewController.m */; };
 		3F4C1FDA19881A0F00B4F994 /* JTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C1FD919881A0F00B4F994 /* JTHomeViewController.m */; };
 		3F4C1FDE19881B0A00B4F994 /* StoryboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C1FDD19881B0A00B4F994 /* StoryboardUtil.m */; };
+		3F4C1FE0198846BA00B4F994 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4C1FDF198846BA00B4F994 /* FacebookSDK.framework */; };
 		3FD10F7119868CC0001B61D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7019868CC0001B61D9 /* Foundation.framework */; };
 		3FD10F7319868CC0001B61D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7219868CC0001B61D9 /* CoreGraphics.framework */; };
 		3FD10F7519868CC0001B61D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD10F7419868CC0001B61D9 /* UIKit.framework */; };
@@ -75,6 +76,7 @@
 		3F4C1FD919881A0F00B4F994 /* JTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHomeViewController.m; sourceTree = "<group>"; };
 		3F4C1FDC19881B0A00B4F994 /* StoryboardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardUtil.h; sourceTree = "<group>"; };
 		3F4C1FDD19881B0A00B4F994 /* StoryboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardUtil.m; sourceTree = "<group>"; };
+		3F4C1FDF198846BA00B4F994 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		3FD10F6D19868CC0001B61D9 /* MySoccerChamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySoccerChamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD10F7019868CC0001B61D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FD10F7219868CC0001B61D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -113,6 +115,7 @@
 				3F4C1FBA198806B700B4F994 /* CFNetwork.framework in Frameworks */,
 				3F4C1FB8198806B000B4F994 /* AudioToolbox.framework in Frameworks */,
 				3F4C1FB6198806A700B4F994 /* Accounts.framework in Frameworks */,
+				3F4C1FE0198846BA00B4F994 /* FacebookSDK.framework in Frameworks */,
 				3FD10F7519868CC0001B61D9 /* UIKit.framework in Frameworks */,
 				3FD10F7119868CC0001B61D9 /* Foundation.framework in Frameworks */,
 			);
@@ -187,6 +190,7 @@
 		3FD10F6F19868CC0001B61D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F4C1FDF198846BA00B4F994 /* FacebookSDK.framework */,
 				3F4C1FCB19880E4D00B4F994 /* Parse.framework */,
 				3F4C1FC91988070200B4F994 /* SystemConfiguration.framework */,
 				3F4C1FC7198806F900B4F994 /* StoreKit.framework */,
@@ -563,6 +567,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/jonas.tomaz/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MySoccerChamp/MySoccerChamp-Prefix.pch";
@@ -593,6 +598,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/jonas.tomaz/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MySoccerChamp/MySoccerChamp-Prefix.pch";

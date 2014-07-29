@@ -7,6 +7,7 @@
 //
 
 #import "JTLoginViewController.h"
+#import <Parse/Parse.h>
 
 @interface JTLoginViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *facebookLoginButton;
@@ -37,9 +38,24 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 - (IBAction)facebookLogin:(id)sender {
     
-    
+    // Login PFUser using Facebook
+    [PFFacebookUtils initializeFacebook];
+    [PFFacebookUtils logInWithPermissions:nil block:^(PFUser *user, NSError *error) {
+        if (!user) {
+            if (!error) {
+                NSLog(@"Uh oh. The user cancelled the Facebook login.");
+            } else {
+                NSLog(@"Uh oh. An error occurred: %@", error);
+            }
+        } else if (user.isNew) {
+            NSLog(@"User with facebook signed up and logged in!");
+        } else {
+            NSLog(@"User with facebook logged in!");
+        }
+    }];
     
 }
 
