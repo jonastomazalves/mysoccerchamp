@@ -7,12 +7,13 @@
 //
 
 #import "JTAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation JTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self configureParse:launchOptions];
     return YES;
 }
 							
@@ -41,6 +42,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark - Parse Configuration
+- (void)configureParse:(NSDictionary *)launchOptions
+{
+    [Parse setApplicationId:kParseApplicationId
+                  clientKey:kParseClientKey];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 }
 
 @end
