@@ -16,33 +16,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNS-6w-Mdn">
-                                <rect key="frame" x="55" y="259" width="211" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ln8-kF-gOa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btn-fb">
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-kQ-HPN">
+                                <rect key="frame" x="96" y="28" width="128" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NG0-Qo-3VC" userLabel="View - User Name">
+                                <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KhK-AI-qrC" userLabel="View - Password">
+                                <rect key="frame" x="0.0" y="198" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.35000000000000003" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nh-sh-nGR">
+                                <rect key="frame" x="0.0" y="248" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.55686274509803924" green="0.83137254901960778" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="22"/>
+                                <state key="normal" title="sign in">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNS-6w-Mdn" userLabel="Button - Facebook">
+                                <rect key="frame" x="57" y="320" width="206" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn-facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" image="btn-facebook-press"/>
+                                <state key="selected" image="btn-facebook-press"/>
+                                <state key="highlighted" image="btn-facebook-press"/>
                                 <connections>
                                     <action selector="facebookLogin:" destination="3Qe-Qf-DYg" eventType="touchUpInside" id="zuZ-iX-GtP"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-kQ-HPN">
-                                <rect key="frame" x="96" y="54" width="128" height="104"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="det-rr-Wdi" userLabel="Button - Twitter">
+                                <rect key="frame" x="57" y="374" width="206" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ln8-kF-gOa">
-                                <rect key="frame" x="0.0" y="394" width="320" height="174"/>
+                                <state key="normal" image="btn-twitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJz-Hk-8p7">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.29803921568627451" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="22"/>
+                                <state key="normal" title="sign up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.65490196078431373" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Ln8-kF-gOa" secondAttribute="centerX" id="94h-Zf-KH8"/>
-                            <constraint firstAttribute="centerX" secondItem="UNS-6w-Mdn" secondAttribute="centerX" id="hNf-jp-0DM"/>
-                            <constraint firstItem="iBm-kQ-HPN" firstAttribute="top" secondItem="M0F-Ls-nbd" secondAttribute="bottom" constant="34" id="kFY-8L-x0b"/>
-                            <constraint firstAttribute="centerX" secondItem="iBm-kQ-HPN" secondAttribute="centerX" id="njR-l5-e5d"/>
-                            <constraint firstItem="2NN-V1-bxr" firstAttribute="top" secondItem="Ln8-kF-gOa" secondAttribute="bottom" id="tkl-Ug-KfO"/>
-                            <constraint firstAttribute="centerY" secondItem="UNS-6w-Mdn" secondAttribute="centerY" id="xSy-bk-KSO"/>
+                            <constraint firstAttribute="centerY" secondItem="UNS-6w-Mdn" secondAttribute="centerY" constant="-58" id="0XO-0J-H2A"/>
+                            <constraint firstAttribute="centerX" secondItem="4Nh-sh-nGR" secondAttribute="centerX" id="6ss-qf-vME"/>
+                            <constraint firstAttribute="centerX" secondItem="WJz-Hk-8p7" secondAttribute="centerX" id="AaF-mq-ceK"/>
+                            <constraint firstItem="UNS-6w-Mdn" firstAttribute="top" secondItem="4Nh-sh-nGR" secondAttribute="bottom" constant="28" id="Ccg-h1-65x"/>
+                            <constraint firstAttribute="centerX" secondItem="det-rr-Wdi" secondAttribute="centerX" id="Vb9-mI-c5T"/>
+                            <constraint firstItem="4Nh-sh-nGR" firstAttribute="top" secondItem="KhK-AI-qrC" secondAttribute="bottom" constant="6" id="YY3-80-N5h"/>
+                            <constraint firstItem="iBm-kQ-HPN" firstAttribute="top" secondItem="M0F-Ls-nbd" secondAttribute="bottom" constant="8" id="Z4F-Kr-fTZ"/>
+                            <constraint firstItem="det-rr-Wdi" firstAttribute="top" secondItem="UNS-6w-Mdn" secondAttribute="bottom" constant="10" id="j27-bw-p74"/>
+                            <constraint firstItem="NG0-Qo-3VC" firstAttribute="top" secondItem="iBm-kQ-HPN" secondAttribute="bottom" constant="20" id="oqn-ug-buj"/>
+                            <constraint firstAttribute="centerX" secondItem="KhK-AI-qrC" secondAttribute="centerX" id="otP-pd-6AB"/>
+                            <constraint firstItem="KhK-AI-qrC" firstAttribute="top" secondItem="NG0-Qo-3VC" secondAttribute="bottom" constant="2" id="w2U-SE-GOv"/>
+                            <constraint firstAttribute="centerX" secondItem="iBm-kQ-HPN" secondAttribute="centerX" id="wID-zs-7ex"/>
+                            <constraint firstItem="2NN-V1-bxr" firstAttribute="top" secondItem="WJz-Hk-8p7" secondAttribute="bottom" id="xY7-32-z6u"/>
+                            <constraint firstAttribute="centerX" secondItem="NG0-Qo-3VC" secondAttribute="centerX" id="zlz-NC-wjO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -83,13 +130,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGADO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osR-e3-6mA">
-                                <rect key="frame" x="124" y="273" width="72" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Veb-6c-BBZ">
                                 <rect key="frame" x="96" y="133" width="128" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,10 +147,29 @@
             </objects>
             <point key="canvasLocation" x="-217" y="-74"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="cwZ-VV-3FH">
+            <objects>
+                <viewController id="o5R-5e-SYe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6B2-ay-f6e"/>
+                        <viewControllerLayoutGuide type="bottom" id="dhZ-Kc-ikH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vmo-WA-l1i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dD-xl-5Yg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
-        <image name="bg" width="320" height="174"/>
-        <image name="btn-fb" width="211" height="50"/>
+        <image name="bg" width="320" height="568"/>
+        <image name="btn-facebook" width="290" height="62"/>
+        <image name="btn-facebook-press" width="290" height="62"/>
+        <image name="btn-twitter" width="290" height="62"/>
         <image name="logo" width="128" height="104"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

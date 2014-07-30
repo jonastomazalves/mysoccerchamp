@@ -68,10 +68,12 @@
     
     [self.loginVC willMoveToParentViewController:nil];
     [self addChildViewController:self.homeVC];
+    [self.containerView addSubview:self.homeVC.view];
     
+    self.homeVC.view.frame = [self newViewStartFrame];
     CGRect endFrame = [self oldViewEndFrame];
     
-    [self transitionFromViewController: self.homeVC toViewController: self.homeVC
+    [self transitionFromViewController: self.loginVC toViewController: self.homeVC
                               duration: 0.25 options:0
                             animations:^{
                                 self.homeVC.view.frame = self.containerView.frame;
@@ -79,13 +81,16 @@
                             }
                             completion:^(BOOL finished) {
                                 [self.loginVC removeFromParentViewController];
-                                [self.containerView addSubview:self.homeVC.view];
                                 [self.homeVC didMoveToParentViewController:self];
                             }];
 }
 
 -(CGRect)oldViewEndFrame {
     return CGRectMake(-320, 0, self.loginVC.view.frame.size.width, self.loginVC.view.frame.size.height);
+}
+
+-(CGRect)newViewStartFrame {
+    return CGRectMake(320, 0, self.containerView.frame.size.width, self.containerView.frame.size.height);
 }
 
 #pragma mark - Notifications
